@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Profile placeholder</title>
+  <desc id="desc">Temporary portrait placeholder for portfolio profile image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#202a1d" />
+      <stop offset="100%" stop-color="#121812" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#dceca8" />
+      <stop offset="100%" stop-color="#96b050" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <rect x="50" y="50" width="700" height="900" rx="28" fill="none" stroke="#45543a" stroke-width="2" />
+  <circle cx="400" cy="350" r="118" fill="#283225" stroke="#58674a" stroke-width="4" />
+  <path d="M230 760c20-140 110-220 170-220h0c60 0 150 80 170 220" fill="#283225" stroke="#58674a" stroke-width="4" />
+  <text x="400" y="860" fill="url(#accent)" font-family="Arial, Helvetica, sans-serif" font-size="38" letter-spacing="8" text-anchor="middle">
+    YOUR PHOTO HERE
+  </text>
+  <text x="400" y="905" fill="#92a17d" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="5" text-anchor="middle">
+    Replace public/profile-placeholder.svg anytime
+  </text>
+</svg>
