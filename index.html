@@ -1,202 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lysander S. Uy | Resume</title>
+    <title>Lysander Uy | Resume</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="resume-page">
-      <div class="resume-noise"></div>
-      <div class="resume-grid"></div>
-
-      <header class="resume-header fade-1">
-        <span class="kicker">lysander.uy</span>
-        <nav class="page-nav" aria-label="Primary">
-          <a class="nav-link nav-link-active" href="index.html">Resume</a>
-          <a class="nav-link" href="experience.html">Experience</a>
+    <header class="site-header">
+      <div class="container">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="brand" href="index.html">Lysander Uy</a>
+          <div class="nav-links">
+            <a class="active" href="index.html">Resume</a>
+            <a href="experience.html">Work Experience</a>
+            <a href="public/Lysander_Uy_Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+          </div>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="resume-main">
-        <section class="hero-block fade-2">
-          <div class="hero-copy-block">
-            <span class="kicker-sub">Developer Profile</span>
-            <h1 class="hero-title">Lysander S. Uy</h1>
-            <p class="hero-role">Full Stack & Mobile Application Developer</p>
-            <p class="hero-copy">
-              Computer Engineering undergraduate with hands-on experience in automation and
-              software development, complemented by embedded systems design. Skilled in building
-              responsive, integrated applications and designing microcontroller-based hardware.
-              Proven ability to deliver cost-efficient, scalable solutions through
-              software-enhanced hardware-software systems.
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Computer Engineering Undergraduate</p>
+            <h1>Building practical software and hardware systems that stay simple, useful, and reliable.</h1>
+            <p class="lead">
+              I am Lysander S. Uy, a Computer Engineering student with experience in full-stack development,
+              mobile apps, embedded systems, and automation-focused projects.
             </p>
+
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:lysander.uy@gmail.com">lysander.uy@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+639777356170">+63 977 735 6170</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/lysanderuy" target="_blank" rel="noreferrer">linkedin.com/in/lysanderuy</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/lysanderuy" target="_blank" rel="noreferrer">github.com/lysanderuy</a></li>
+            </ul>
           </div>
 
-          <aside class="panel profile-panel">
-            <img
-              class="profile-image"
-              src="public/profile-placeholder.svg"
-              alt="Temporary profile placeholder for Lysander S. Uy"
-            />
-            <ul class="contact-list">
-              <li><a class="contact-item" href="tel:+639777356170">+63 977 735 6170</a></li>
-              <li><a class="contact-item" href="mailto:lysander.uy@gmail.com">lysander.uy@gmail.com</a></li>
-              <li><a class="contact-item" href="https://linkedin.com/in/lysanderuy" target="_blank" rel="noreferrer">linkedin.com/in/lysanderuy</a></li>
-              <li><a class="contact-item" href="https://github.com/lysanderuy" target="_blank" rel="noreferrer">github.com/lysanderuy</a></li>
-            </ul>
-          </aside>
-        </section>
+          <figure class="resume-figure">
+            <img src="public/Lysander_Uy_Resume%201%20of%202.png" alt="Preview of Lysander Uy's resume" />
+            <figcaption>Resume preview based on the submitted file.</figcaption>
+          </figure>
+        </div>
+      </section>
 
-        <section class="resume-columns fade-3">
-          <article class="column-stack">
-            <section class="panel">
-              <p class="section-title">Education</p>
-              <p class="info-lead">Bachelor of Science in Computer Engineering</p>
-              <p class="info-sub">University of San Carlos</p>
-              <p class="details no-margin">08/2022 - 05/2026</p>
-            </section>
+      <section class="section">
+        <div class="container">
+          <h2>Summary</h2>
+          <p>
+            Computer Engineering undergraduate with hands-on experience in automation and software
+            development, complemented by embedded systems design. Skilled in building responsive,
+            integrated applications and designing microcontroller-based hardware.
+          </p>
+        </div>
+      </section>
 
-            <section class="panel">
-              <p class="section-title">Technical Skills</p>
-              <div class="skill-group">
-                <p class="group-label">Programming Languages</p>
-                <div class="chips">
-                  <span class="chip">C/C++</span>
-                  <span class="chip">Python</span>
-                  <span class="chip">x86 Assembly</span>
-                  <span class="chip">Java</span>
-                  <span class="chip">JavaScript</span>
-                  <span class="chip">TypeScript</span>
-                  <span class="chip">Rust</span>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <p class="group-label">Frameworks & Libraries</p>
-                <div class="chips">
-                  <span class="chip">React</span>
-                  <span class="chip">Next.js</span>
-                  <span class="chip">Nest.js</span>
-                  <span class="chip">Node.js</span>
-                  <span class="chip">Tailwind CSS</span>
-                  <span class="chip">shadcn/ui</span>
-                </div>
-              </div>
-
-              <div class="skill-group">
-                <p class="group-label">Tools & Platforms</p>
-                <div class="chips">
-                  <span class="chip">Git</span>
-                  <span class="chip">GitHub</span>
-                  <span class="chip">VS Code</span>
-                  <span class="chip">PlatformIO</span>
-                  <span class="chip">MPLAB X</span>
-                  <span class="chip">Vercel</span>
-                  <span class="chip">Docker</span>
-                  <span class="chip">Supabase</span>
-                  <span class="chip">Firebase</span>
-                  <span class="chip">SQLite</span>
-                  <span class="chip">PostgreSQL</span>
-                  <span class="chip">Prisma</span>
-                </div>
-              </div>
-            </section>
-
-            <section class="panel">
-              <p class="section-title">Leadership & Involvement</p>
-
-              <div class="project">
-                <div class="job-topline">
-                  <h3 class="project-title">USC Computer Driver Enthusiasts (CoDE)</h3>
-                  <p class="meta-tag">05/2025 - Present</p>
-                </div>
-                <p class="project-stack">President and Hardware Lead</p>
-                <p class="details">
-                  Planned 10+ technical projects and outreach initiatives, increasing activities by
-                  50% and growing membership by 33%.
-                </p>
-              </div>
-
-              <div class="project no-margin">
-                <div class="job-topline">
-                  <h3 class="project-title">USC Computer Engineering Council (CpEC)</h3>
-                  <p class="meta-tag">08/2023 - 05/2025</p>
-                </div>
-                <p class="project-stack">Councilor and Committee Member</p>
-                <p class="details">
-                  Organized the E-Waste Drive & Awareness Initiative and delivered peer-led
-                  tutorials in Electrical Circuits and Microprocessors.
-                </p>
-              </div>
-            </section>
+      <section class="section muted-section">
+        <div class="container two-column">
+          <article class="card">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Computer Engineering</strong></p>
+            <p>University of San Carlos</p>
+            <p>August 2022 to May 2026</p>
           </article>
 
-          <aside class="column-stack">
-            <section class="panel">
-              <p class="section-title">Selected Projects</p>
+          <article class="card">
+            <h2>Technical Skills</h2>
+            <div class="tag-list">
+              <span>C / C++</span>
+              <span>Python</span>
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Nest.js</span>
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+              <span>Prisma</span>
+              <span>Firebase</span>
+              <span>Docker</span>
+              <span>Git</span>
+              <span>KiCad</span>
+              <span>SolidWorks</span>
+            </div>
+          </article>
+        </div>
+      </section>
 
-              <div class="project">
-                <div class="job-topline">
-                  <h3 class="project-title">Automated Imaging System for Microplastics</h3>
-                  <p class="meta-tag">08/2024 - 12/2025</p>
-                </div>
-                <p class="project-stack">Python, Detectron2, OpenCV, SQLite, GRBL, SolidWorks</p>
-                <p class="details">
-                  Redesigned a compact automated Petri dish platform and improved software
-                  architecture, storage efficiency, and retraining workflow for the model.
-                </p>
-              </div>
+      <section class="section">
+        <div class="container">
+          <h2>Highlights</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <h3>Full-Stack Developer Intern, Symph</h3>
+              <p class="meta">February 2026 to May 2026 • Cebu (Remote)</p>
+              <p>Helped deliver features, bug fixes, and API integrations for finance and expense-management products.</p>
+            </article>
 
-              <div class="project">
-                <div class="job-topline">
-                  <h3 class="project-title">SproutSpot</h3>
-                  <p class="meta-tag">03/2025</p>
-                </div>
-                <p class="project-stack">Next.js, TypeScript, Tailwind CSS, Prisma, PostgreSQL</p>
-                <p class="details">
-                  Built interactive crop simulation visualizations and integrated backend APIs and
-                  CSV data pipelines.
-                </p>
-              </div>
+            <article class="timeline-item">
+              <h3>Mobile App Developer Intern, Focus Bear</h3>
+              <p class="meta">February 2026 to May 2026 • Melbourne (Remote)</p>
+              <p>Built and maintained React Native features with attention to responsive interfaces and API integration.</p>
+            </article>
 
-              <div class="project no-margin">
-                <div class="job-topline">
-                  <h3 class="project-title">Klaro</h3>
-                  <p class="meta-tag">05/2024</p>
-                </div>
-                <p class="project-stack">Next.js, TypeScript, Tailwind CSS, Firebase</p>
-                <p class="details">
-                  Developed a responsive parcel tracking frontend and integrated Firebase for live
-                  shipment updates.
-                </p>
-              </div>
-            </section>
+            <article class="timeline-item">
+              <h3>Full-Stack Developer Freelancer, Anek2</h3>
+              <p class="meta">2024 to Present • Cebu (Remote)</p>
+              <p>Developing a lab form automation workflow that improves turnaround time and reduces manual errors.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <section class="panel">
-              <p class="section-title">Competitions</p>
-              <ul class="achievement-list">
-                <li>Roboquest 2025 | Top 10</li>
-                <li>SolidWorks Model Mania 2025: Academe 4 | Top 25</li>
-                <li>RSC1 2025 VisMin Leg | 4th Place</li>
-                <li>GDGC LEARNIVERSE: The Ideathon | 5th Place</li>
-                <li>USC Robocon 2025 | 2nd Place</li>
-                <li>ICpEP - SU Robotix! 2025 | 4th Place</li>
-                <li>UP x AI GEN Cebu Komsai Week Hackathon</li>
-                <li>ICpEP - CPE Challenge 2024</li>
-                <li>USC Formula 01 2024 | 2nd Place</li>
-                <li>DICT Philippine Startup Challenge 8 | Top 25 in Region VII</li>
-              </ul>
-            </section>
-          </aside>
-        </section>
-      </main>
+      <section class="section muted-section">
+        <div class="container">
+          <h2>Leadership and Involvement</h2>
+          <div class="two-column">
+            <article class="card">
+              <h3>USC Computer Driver Enthusiasts (CoDE)</h3>
+              <p class="meta">President and Hardware Lead • May 2025 to Present</p>
+              <p>Led technical projects and outreach efforts while supporting student learning through hands-on engineering work.</p>
+            </article>
 
-      <footer class="resume-footer fade-4">
-        <span class="footer-copy">Lysander S. Uy · Resume</span>
-        <span class="footer-copy">Vanilla HTML & CSS</span>
-      </footer>
-    </div>
+            <article class="card">
+              <h3>USC Computer Engineering Council (CpEC)</h3>
+              <p class="meta">Councilor and Committee Member • August 2023 to May 2025</p>
+              <p>Helped organize sustainability initiatives and delivered peer-led tutorials in circuits and microprocessors.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Selected Projects</h2>
+          <div class="two-column">
+            <article class="card">
+              <h3>Automated Imaging System for Microplastics Classification</h3>
+              <p>Redesigned the hardware platform and streamlined the software architecture for a more compact and efficient workflow.</p>
+            </article>
+
+            <article class="card">
+              <h3>SproutSpot</h3>
+              <p>Created interactive farm simulation views with backend data pipelines for clearer, real-time insights.</p>
+            </article>
+
+            <article class="card">
+              <h3>Klaro</h3>
+              <p>Built a responsive parcel tracking interface with live updates using Firebase.</p>
+            </article>
+
+            <article class="card">
+              <h3>Competitions</h3>
+              <p>Placed in multiple line-following, CAD modeling, hackathon, and engineering competitions from 2023 to 2025.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Minimal vanilla resume website in a single shared stylesheet.</p>
+        <a href="experience.html">Go to Work Experience</a>
+      </div>
+    </footer>
   </body>
 </html>
