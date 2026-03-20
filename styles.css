@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
 :root {
   --bg: #1f241d;
   --bg-soft: #262c24;
@@ -22,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Manrope", "Segoe UI", sans-serif;
   line-height: 1.6;
   color: var(--text);
   background:
@@ -154,6 +156,7 @@ h2,
 h3 {
   margin-top: 0;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 h1 {
@@ -175,6 +178,12 @@ h3 {
   max-width: 62ch;
   color: var(--muted);
   font-size: 1.05rem;
+}
+
+p {
+  margin-top: 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .feature-card {
@@ -323,9 +332,19 @@ h3 {
   gap: 1rem;
 }
 
+.detail-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
 .experience-block ul {
   margin: 0.75rem 0 0;
   padding-left: 1.2rem;
+}
+
+.detail-list li,
+.experience-block li {
+  margin-bottom: 0.45rem;
 }
 
 .site-footer {
