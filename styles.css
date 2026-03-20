@@ -1,13 +1,15 @@
 :root {
-  --bg: #f4f5ef;
-  --surface: #ffffff;
-  --surface-soft: #e8ecdf;
-  --text: #243021;
-  --muted: #5e685a;
-  --line: #c7d1bf;
-  --primary: #5f7146;
-  --primary-deep: #405032;
-  --shadow: rgba(36, 48, 33, 0.08);
+  --bg: #1f241d;
+  --bg-soft: #262c24;
+  --surface: #2b332b;
+  --surface-soft: #313a31;
+  --surface-strong: #394338;
+  --text: #eef0e7;
+  --muted: #b7bda9;
+  --line: rgba(184, 197, 157, 0.18);
+  --primary: #91a26e;
+  --primary-deep: #dce4c8;
+  --shadow: rgba(0, 0, 0, 0.22);
 }
 
 * {
@@ -23,7 +25,9 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
   color: var(--text);
-  background: linear-gradient(180deg, #eef1e5 0%, var(--bg) 100%);
+  background:
+    radial-gradient(circle at top, rgba(145, 162, 110, 0.12), transparent 32%),
+    linear-gradient(180deg, #20261f 0%, var(--bg) 100%);
 }
 
 img {
@@ -52,7 +56,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(244, 245, 239, 0.94);
+  background: rgba(31, 36, 29, 0.9);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(8px);
 }
@@ -89,7 +93,7 @@ a:hover {
 .nav-links a.active,
 .nav-links a:hover {
   border-color: var(--line);
-  background: var(--surface-soft);
+  background: rgba(145, 162, 110, 0.12);
 }
 
 .hero {
@@ -105,6 +109,36 @@ a:hover {
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
   align-items: center;
+}
+
+.hero-shell,
+.dashboard-grid,
+.split-grid,
+.cards-three {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero-shell {
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: stretch;
+}
+
+.dashboard-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.split-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cards-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cards-stack {
+  display: grid;
+  gap: 1rem;
 }
 
 .eyebrow {
@@ -143,6 +177,11 @@ h3 {
   font-size: 1.05rem;
 }
 
+.feature-card {
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(145, 162, 110, 0.08), transparent 100%), var(--surface);
+}
+
 .contact-list {
   padding: 0;
   margin: 1.5rem 0 0;
@@ -153,13 +192,21 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+.compact-list {
+  margin-top: 0;
+}
+
+.compact-list a {
+  text-decoration: none;
+}
+
 .resume-figure,
 .card,
 .experience-block {
   margin: 0;
-  padding: 1rem;
+  padding: 1.15rem;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 22px;
   background: var(--surface);
   box-shadow: 0 18px 40px var(--shadow);
 }
@@ -179,16 +226,34 @@ h3 {
   padding: 1rem 0 3rem;
 }
 
-.muted-section {
-  background: rgba(232, 236, 223, 0.55);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+.compact-section {
+  padding-top: 0.5rem;
 }
 
 .two-column {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
+}
+
+.panel-block {
+  min-height: 100%;
+}
+
+.panel-label {
+  margin: 0 0 0.8rem;
+  color: var(--primary);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.wide-panel {
+  grid-column: span 2;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
 }
 
 .tag-list {
@@ -200,19 +265,33 @@ h3 {
 .tag-list span {
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: var(--surface-soft);
+  background: rgba(145, 162, 110, 0.12);
   color: var(--primary-deep);
   font-size: 0.92rem;
+  border: 1px solid rgba(145, 162, 110, 0.16);
 }
 
-.timeline {
+.stat-row {
   display: grid;
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.5rem;
 }
 
-.timeline-item {
-  padding-left: 1rem;
-  border-left: 3px solid var(--primary);
+.mini-card {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.mini-label {
+  display: block;
+  margin-bottom: 0.2rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .meta {
@@ -223,6 +302,25 @@ h3 {
 
 .experience-block {
   margin-bottom: 1rem;
+}
+
+.cards-stack .experience-block {
+  margin-bottom: 0;
+}
+
+.experience-card .meta,
+.experience-block .meta {
+  color: var(--primary);
+}
+
+.role-line {
+  margin: 0 0 0.75rem;
+  color: var(--primary-deep);
+}
+
+.stack-list {
+  display: grid;
+  gap: 1rem;
 }
 
 .experience-block ul {
@@ -251,8 +349,20 @@ h3 {
   }
 
   .hero-grid,
-  .two-column {
+  .hero-shell,
+  .split-grid,
+  .cards-three,
+  .two-column,
+  .stat-row {
     grid-template-columns: 1fr;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-panel {
+    grid-column: span 1;
   }
 
   .hero {
