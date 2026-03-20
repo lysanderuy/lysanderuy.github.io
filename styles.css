@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  background: #181d0c;
 }
 
 @keyframes fadeUp {
@@ -96,6 +97,13 @@ body {
   padding: 40px 56px 48px;
 }
 
+.hero-block {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: end;
+}
+
 .kicker {
   font-size: 10px;
   letter-spacing: 0.3em;
@@ -118,6 +126,22 @@ body {
   font-weight: 300;
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(46px, 8vw, 86px);
+  margin: 0;
+}
+
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-role {
+  margin: 0;
+  color: #edf5a8;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  line-height: 1.6;
 }
 
 .hero-copy {
@@ -126,14 +150,20 @@ body {
   letter-spacing: 0.03em;
   color: #c2d878;
   max-width: 760px;
-  margin-top: 16px;
+  margin: 0;
 }
 
 .resume-columns {
   display: grid;
-  grid-template-columns: 1.1fr 1fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 24px;
   margin-top: 36px;
+}
+
+.column-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .panel {
@@ -155,8 +185,19 @@ body {
   margin-bottom: 22px;
 }
 
+.project {
+  margin-bottom: 24px;
+}
+
 .no-margin {
   margin-bottom: 0;
+}
+
+.job-topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 .period {
@@ -165,6 +206,16 @@ body {
   text-transform: uppercase;
   color: #7f9942;
   margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.meta-tag {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6d8440;
+  text-align: right;
 }
 
 .role {
@@ -172,6 +223,7 @@ body {
   font-size: 32px;
   line-height: 1.1;
   font-family: "Cormorant Garamond", serif;
+  margin: 0;
 }
 
 .company {
@@ -186,6 +238,25 @@ body {
   font-size: 12px;
   color: #c2d878;
   line-height: 1.7;
+}
+
+.project-title,
+.info-lead {
+  color: #edf5a8;
+  font-size: 24px;
+  line-height: 1.15;
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+}
+
+.project-stack,
+.info-sub {
+  margin: 8px 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a8c84a;
+  line-height: 1.5;
 }
 
 .chips {
@@ -220,6 +291,7 @@ body {
 .contact-item {
   display: flex;
   align-items: center;
+  text-decoration: none;
   padding: 8px 10px;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -260,6 +332,7 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .hero-block,
   .resume-columns {
     grid-template-columns: 1fr;
   }
@@ -277,5 +350,20 @@ body {
 
   .role {
     font-size: 28px;
+  }
+
+  .project-title,
+  .info-lead {
+    font-size: 22px;
+  }
+
+  .job-topline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .meta-tag {
+    text-align: left;
   }
 }
