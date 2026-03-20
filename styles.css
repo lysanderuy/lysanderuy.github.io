@@ -79,6 +79,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   padding: 24px 56px;
 }
 
@@ -109,6 +110,31 @@ body {
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #96b050;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #c2d878;
+  border: 1px solid rgba(110, 136, 64, 0.4);
+  padding: 8px 12px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link-active {
+  background: rgba(150, 180, 60, 0.12);
+  border-color: rgba(194, 216, 120, 0.7);
+  color: #edf5a8;
 }
 
 .kicker-sub {
@@ -279,6 +305,38 @@ body {
   margin-bottom: 12px;
 }
 
+.resume-gallery {
+  margin-top: 24px;
+}
+
+.figure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.resume-figure {
+  margin: 0;
+  padding: 14px;
+  border: 1px solid rgba(110, 136, 64, 0.4);
+  background: rgba(20, 25, 10, 0.45);
+}
+
+.resume-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(110, 136, 64, 0.35);
+}
+
+.figure-caption {
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #96b050;
+}
+
 .contact-list {
   list-style: none;
   margin: 0;
@@ -336,6 +394,10 @@ body {
   .resume-columns {
     grid-template-columns: 1fr;
   }
+
+  .figure-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -346,6 +408,12 @@ body {
 
   .resume-main {
     padding: 28px 22px 32px;
+  }
+
+  .resume-header,
+  .resume-footer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .role {
