@@ -32,6 +32,14 @@ body {
     linear-gradient(180deg, #20261f 0%, var(--bg) 100%);
 }
 
+body,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -165,7 +173,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-size: 1.6rem;
 }
 
@@ -175,15 +183,15 @@ h3 {
 }
 
 .lead {
+  margin-bottom: 0;
   max-width: 62ch;
   color: var(--muted);
   font-size: 1.05rem;
 }
 
 p {
-  margin-top: 0;
-  text-align: justify;
-  text-justify: inter-word;
+  margin: 0 0 0.75rem;
+  text-align: left;
 }
 
 .feature-card {
@@ -193,7 +201,7 @@ p {
 
 .contact-list {
   padding: 0;
-  margin: 1.5rem 0 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -262,7 +270,7 @@ p {
 }
 
 .section-heading {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .tag-list {
@@ -337,14 +345,27 @@ p {
   padding-left: 1.15rem;
 }
 
-.experience-block ul {
-  margin: 0.75rem 0 0;
+.experience-block ul,
+.experience-card ul {
+  margin: 0;
   padding-left: 1.2rem;
 }
 
 .detail-list li,
-.experience-block li {
+.experience-block li,
+.experience-card li {
   margin-bottom: 0.45rem;
+}
+
+.detail-list li:last-child,
+.experience-block li:last-child,
+.experience-card li:last-child,
+.contact-list li:last-child,
+.stack-list > div > *:last-child,
+.panel-block > *:last-child,
+.feature-card > *:last-child,
+.footer-content > *:last-child {
+  margin-bottom: 0;
 }
 
 .site-footer {
