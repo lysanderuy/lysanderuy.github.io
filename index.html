@@ -10,27 +10,35 @@
     <header class="site-header">
       <div class="container">
         <nav class="site-nav" aria-label="Main navigation">
-          <a class="brand" href="index.html">Lysander Uy</a>
           <div class="nav-links">
             <a class="active" href="index.html">Resume</a>
             <a href="experience.html">Work Experience</a>
-            <a href="public/Lysander_Uy_Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+            <a
+              class="nav-cta"
+              href="public/Lysander_Uy_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              >Resume PDF</a
+            >
           </div>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class="page-shell">
       <section class="hero">
         <div class="container hero-shell">
-          <div class="hero-copy card feature-card">
-            <p class="eyebrow">Resume</p>
-            <h1>Lysander Uy</h1>
-            <p class="lead">
-              Computer Engineering student with experience in full-stack development, automation,
-              and embedded systems. I enjoy building practical tools, shipping clean interfaces,
-              and working on projects that solve real problems.
-            </p>
+          <div class="hero-copy feature-card">
+            <div class="title-group">
+              <h1>Lysander Uy</h1>
+              <p class="lead">
+                Computer Engineering student with experience in full-stack
+                development, automation, and embedded systems. I build practical
+                software and hardware-backed systems with a focus on clean
+                interfaces, reliable workflows, and projects that solve real
+                problems.
+              </p>
+            </div>
 
             <div class="stat-row">
               <div class="mini-card">
@@ -39,7 +47,7 @@
               </div>
               <div class="mini-card">
                 <span class="mini-label">Focus</span>
-                <strong>Full-Stack + Embedded</strong>
+                <strong>Web, Automation, Embedded</strong>
               </div>
               <div class="mini-card">
                 <span class="mini-label">Status</span>
@@ -48,44 +56,115 @@
             </div>
           </div>
 
-          <figure class="resume-figure card">
-            <img src="public/Lysander_Uy_Resume%201%20of%202.png" alt="Preview of Lysander Uy's resume" />
-            <figcaption>Preview of my resume.</figcaption>
+          <figure class="resume-figure">
+            <div class="document-frame">
+              <div class="document-body">
+                <img
+                  src="public/Lysander_Uy_Resume%201%20of%202.png"
+                  alt="Preview of Lysander Uy's resume"
+                />
+              </div>
+            </div>
+            <figcaption>Document preview.</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="section compact-section">
-        <div class="container dashboard-grid">
-          <article class="card panel-block profile-panel">
-            <p class="panel-label">Profile</p>
-            <h2>About Me</h2>
-            <ul class="detail-list">
-              <li>I build web and automation projects with a strong focus on usability and reliability.</li>
-              <li>I am comfortable working across frontend, backend, and hardware-related systems.</li>
-              <li>I am interested in practical engineering work that improves day-to-day workflows.</li>
-            </ul>
-          </article>
+        <div class="container section-shell">
+          <p class="section-marker">Quick Snapshot</p>
+          <div class="intro-grid">
+            <article class="card panel-block profile-panel spotlight-panel">
+              <div class="panel-header">
+                <p class="panel-label">At a Glance</p>
+                <h2>Profile</h2>
+              </div>
+              <p class="section-intro">
+                I enjoy building systems that are useful in practice, whether
+                that means refining a frontend, automating repetitive processes,
+                or connecting software with hardware-focused work.
+              </p>
+              <ul class="detail-list">
+                <li>
+                  I work across web, automation, and embedded projects with a
+                  strong focus on usability, reliability, and clear execution.
+                </li>
+                <li>
+                  I am comfortable moving between frontend, backend, and
+                  hardware-related systems depending on what a project needs.
+                </li>
+                <li>
+                  I am most interested in engineering work that improves
+                  day-to-day workflows and turns ideas into dependable tools.
+                </li>
+              </ul>
+            </article>
 
-          <article class="card panel-block contact-panel">
-            <p class="panel-label">Contact</p>
-            <ul class="contact-list compact-list">
-              <li><a href="mailto:lysander.uy@gmail.com">lysander.uy@gmail.com</a></li>
-              <li><a href="tel:+639777356170">+63 977 735 6170</a></li>
-              <li><a href="https://linkedin.com/in/lysanderuy" target="_blank" rel="noreferrer">linkedin.com/in/lysanderuy</a></li>
-              <li><a href="https://github.com/lysanderuy" target="_blank" rel="noreferrer">github.com/lysanderuy</a></li>
-            </ul>
-          </article>
+            <div class="detail-grid">
+              <article class="card panel-block contact-panel">
+                <div class="panel-header">
+                  <p class="panel-label">Contact Details</p>
+                  <h2>Contact</h2>
+                </div>
+                <ul class="contact-list utility-list compact-list">
+                  <li>
+                    <a class="contact-item" href="mailto:lysander.uy@gmail.com">
+                      <span class="detail-term">Email</span>
+                      <span class="detail-value">lysander.uy@gmail.com</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="contact-item" href="tel:+639777356170">
+                      <span class="detail-term">Phone</span>
+                      <span class="detail-value">+63 977 735 6170</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="contact-item"
+                      href="https://linkedin.com/in/lysanderuy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span class="detail-term">LinkedIn</span>
+                      <span class="detail-value">linkedin.com/in/lysanderuy</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="contact-item"
+                      href="https://github.com/lysanderuy"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span class="detail-term">GitHub</span>
+                      <span class="detail-value">github.com/lysanderuy</span>
+                    </a>
+                  </li>
+                </ul>
+              </article>
 
-          <article class="card panel-block education-panel">
-            <p class="panel-label">Education</p>
-            <h2>University of San Carlos</h2>
-            <p><strong>Bachelor of Science in Computer Engineering</strong></p>
-            <p class="meta">August 2022 to May 2026</p>
-          </article>
+              <article class="card panel-block education-panel">
+                <div class="panel-header">
+                  <p class="panel-label">Academic Background</p>
+                  <h2>Education</h2>
+                </div>
+                <h3>University of San Carlos</h3>
+                <p><strong>Bachelor of Science in Computer Engineering</strong></p>
+                <p class="meta">August 2022 to May 2026</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <article class="card panel-block wide-panel">
-            <p class="panel-label">Technical Stack</p>
+      <section class="section compact-section">
+        <div class="container section-shell">
+          <article class="card panel-block skills-panel">
+            <div class="section-heading">
+              <p class="section-marker">Core Tools</p>
+              <h2>Technical Stack</h2>
+            </div>
             <div class="skills-grid">
               <div class="skill-group">
                 <h3>Programming Languages</h3>
@@ -160,105 +239,191 @@
       </section>
 
       <section class="section compact-section">
-        <div class="container split-grid">
-          <article class="card panel-block">
-            <p class="panel-label">Leadership</p>
-            <div class="stack-list">
-              <div>
-                <h3>USC Computer Driver Enthusiasts (CoDE)</h3>
-                <p class="meta">President and Hardware Lead</p>
-                <ul class="detail-list">
-                  <li>Led technical projects and student activities for the organization.</li>
-                  <li>Helped grow participation through hands-on events and outreach.</li>
-                </ul>
+        <div class="container section-shell">
+          <p class="section-marker">Experience Snapshot</p>
+          <div class="split-grid">
+            <article class="card panel-block">
+              <div class="panel-header">
+                <p class="panel-label">Campus Leadership</p>
+                <h2>Leadership</h2>
               </div>
-              <div>
-                <h3>USC Computer Engineering Council (CpEC)</h3>
-                <p class="meta">Councilor and Committee Member</p>
-                <ul class="detail-list">
-                  <li>Supported student programs and department activities.</li>
-                  <li>Helped run peer tutorials in circuits and microprocessors.</li>
-                </ul>
+              <div class="stack-list">
+                <div>
+                  <h3>USC Computer Driver Enthusiasts (CoDE)</h3>
+                  <p class="meta">President and Hardware Lead</p>
+                  <ul class="detail-list">
+                    <li>
+                      Led the organization&rsquo;s technical initiatives and
+                      helped shape hands-on activities for members.
+                    </li>
+                    <li>
+                      Supported engagement through events, collaboration, and
+                      outreach built around practical engineering work.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>USC Computer Engineering Council (CpEC)</h3>
+                  <p class="meta">Councilor and Committee Member</p>
+                  <ul class="detail-list">
+                    <li>
+                      Contributed to student programs and department-led
+                      activities within the Computer Engineering community.
+                    </li>
+                    <li>
+                      Helped facilitate peer tutorials in circuits and
+                      microprocessors to support younger students.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article class="card panel-block">
-            <p class="panel-label">Selected Projects</p>
-            <div class="stack-list">
-              <div>
-                <h3>Automated Imaging System for Microplastics Classification</h3>
-                <ul class="detail-list">
-                  <li>Redesigned the automated Petri dish platform into a more compact form.</li>
-                  <li>Improved the setup while keeping it practical for lab use.</li>
-                </ul>
+            <article class="card panel-block">
+              <div class="panel-header">
+                <p class="panel-label">Project Highlights</p>
+                <h2>Projects</h2>
               </div>
-              <div>
-                <h3>SproutSpot</h3>
-                <ul class="detail-list">
-                  <li>Built frontend visualizations and connected them to backend APIs.</li>
-                  <li>Worked with CSV-based data flows for the project.</li>
-                </ul>
+              <div class="stack-list">
+                <div>
+                  <h3>
+                    An Automated Imaging System for Microplastics Sample
+                    Classification Using Convolutional Neural Network
+                  </h3>
+                  <p class="project-summary">
+                    An imaging system with a retrainable AI model for detecting
+                    and classifying microplastics samples, paired with a
+                    controllable XY platform for automated Petri dish movement
+                    through a centralized software interface.
+                  </p>
+                  <ul class="detail-list">
+                    <li>
+                      Redesigned the automated Petri dish platform into a more
+                      compact mechanical layout that better fit the intended lab
+                      workflow.
+                    </li>
+                    <li>
+                      Improved the overall system design while keeping the setup
+                      practical to use and maintain in a real testing
+                      environment.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>SproutSpot</h3>
+                  <p class="project-summary">
+                    A data-driven platform that gives farmers a digital twin of
+                    their farm so they can test parameters like fertilizer and
+                    water usage in real time, with AI-assisted insights for crop
+                    management and planning.
+                  </p>
+                  <ul class="detail-list">
+                    <li>
+                      Built frontend visualizations and connected them to backend
+                      APIs so the interface could surface project data clearly.
+                    </li>
+                    <li>
+                      Worked with CSV-based data flows to support ingestion,
+                      transformation, and display across the product.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3>Klaro</h3>
+                  <p class="project-summary">
+                    A parcel tracking platform built for customers, sellers, and
+                    delivery teams so shipment activity can be tracked and
+                    managed in real time within one system.
+                  </p>
+                  <ul class="detail-list">
+                    <li>
+                      Developed responsive parcel tracking screens designed to
+                      stay clear across desktop and mobile layouts.
+                    </li>
+                    <li>
+                      Integrated Firebase to support live shipment updates and
+                      more immediate tracking feedback.
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3>Klaro</h3>
-                <ul class="detail-list">
-                  <li>Developed responsive parcel tracking screens.</li>
-                  <li>Integrated Firebase for live shipment updates.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="section compact-section">
-        <div class="container split-grid">
-          <article class="card panel-block">
-            <p class="panel-label">Competitions</p>
-            <ul class="detail-list">
-              <li>Roboquest 2025 | Top 10, Line Following Competition</li>
-              <li>SolidWorks Model Mania 2025: Academe 4 | Top 25, CAD Modeling</li>
-              <li>RSC1 2025 VisMin Leg | 4th Place, Line Following Competition</li>
-              <li>GDGC LEARNIVERSE: The Ideathon | 5th Place</li>
-              <li>USC Robocon 2025 | 2nd Place, Line Following Competition</li>
-              <li>ICpEP - SU Robotix! 2025 | 4th Place, Line Following Competition</li>
-              <li>UP x AI GEN Cebu Komsai Week Hackathon</li>
-              <li>ICpEP - CPE Challenge 2024, Breadboarding Competition</li>
-              <li>USC Formula 01 2024 | 2nd Place, Line Following Competition</li>
-              <li>DICT Philippine Startup Challenge 8 | Top 25 in Region VII</li>
-            </ul>
-          </article>
+      <section class="section compact-section support-tier">
+        <div class="container section-shell">
+          <p class="section-marker">Supporting Record</p>
+          <div class="split-grid">
+            <article class="card panel-block">
+              <div class="panel-header">
+                <p class="panel-label">Highlights</p>
+                <h2>Competitions</h2>
+              </div>
+              <ul class="detail-list">
+                <li>Roboquest 2025 | Top 10, Line Following Competition</li>
+                <li>
+                  SolidWorks Model Mania 2025: Academe 4 | Top 25, CAD Modeling
+                </li>
+                <li>
+                  RSC1 2025 VisMin Leg | 4th Place, Line Following Competition
+                </li>
+                <li>GDGC LEARNIVERSE: The Ideathon | 5th Place</li>
+                <li>USC Robocon 2025 | 2nd Place, Line Following Competition</li>
+                <li>
+                  ICpEP - SU Robotix! 2025 | 4th Place, Line Following Competition
+                </li>
+                <li>UP x AI GEN Cebu Komsai Week Hackathon</li>
+                <li>ICpEP - CPE Challenge 2024, Breadboarding Competition</li>
+                <li>
+                  USC Formula 01 2024 | 2nd Place, Line Following Competition
+                </li>
+                <li>
+                  DICT Philippine Startup Challenge 8 | Top 25 in Region VII
+                </li>
+              </ul>
+            </article>
 
-          <article class="card panel-block">
-            <p class="panel-label">References</p>
-            <div class="stack-list">
-              <div>
-                <h3>Dr. Luis Gerardo Cañete, PhD</h3>
-                <p>Head PCB/CRA Laboratory, University of San Carlos</p>
-                <p class="meta">lscañete@usc.edu.ph • (032) 230-010</p>
+            <article class="card panel-block">
+              <div class="panel-header">
+                <p class="panel-label">Professional Contacts</p>
+                <h2>References</h2>
               </div>
-              <div>
-                <h3>Dr. Philip Virgil B. Astillo, PhD</h3>
-                <p>Head NCR Laboratory, University of San Carlos</p>
-                <p class="meta">pvbastillo@usc.edu.ph • +63 999 887 7253</p>
+              <div class="stack-list">
+                <div>
+                  <h3>Dr. Luis Gerardo Cañete, PhD</h3>
+                  <p>Head PCB/CRA Laboratory, University of San Carlos</p>
+                  <p class="meta">lscañete@usc.edu.ph • (032) 230-010</p>
+                </div>
+                <div>
+                  <h3>Dr. Philip Virgil B. Astillo, PhD</h3>
+                  <p>Head NCR Laboratory, University of San Carlos</p>
+                  <p class="meta">pvbastillo@usc.edu.ph • +63 999 887 7253</p>
+                </div>
+                <div>
+                  <h3>Paul John Toral</h3>
+                  <p>Project Coordinator, AvePoint USA LLC</p>
+                  <p class="meta">pjtoralme@gmail.com • +63 977 032 9562</p>
+                </div>
               </div>
-              <div>
-                <h3>Paul John Toral</h3>
-                <p>Project Coordinator, AvePoint USA LLC</p>
-                <p class="meta">pjtoralme@gmail.com • +63 977 032 9562</p>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>Built with plain HTML and CSS.</p>
-        <a href="experience.html">View work experience</a>
+        <p class="footer-kicker">Lysander Uy</p>
+        <p class="footer-line">
+          Full-stack development, automation, and embedded systems.
+        </p>
       </div>
     </footer>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      Top
+    </button>
+    <script src="script.js" defer></script>
   </body>
 </html>

@@ -10,90 +10,198 @@
     <header class="site-header">
       <div class="container">
         <nav class="site-nav" aria-label="Main navigation">
-          <a class="brand" href="index.html">Lysander Uy</a>
           <div class="nav-links">
             <a href="index.html">Resume</a>
             <a class="active" href="experience.html">Work Experience</a>
-            <a href="public/Lysander_Uy_Resume.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
+            <a
+              class="nav-cta"
+              href="public/Lysander_Uy_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              >Resume PDF</a
+            >
           </div>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class="page-shell">
       <section class="hero inner-hero">
-        <div class="container narrow hero-copy card feature-card">
-          <p class="eyebrow">Work Experience</p>
-          <h1>Work Experience</h1>
-          <p class="lead">
-            More detail on the internships and freelance work listed on my resume.
-          </p>
-        </div>
-      </section>
-
-      <section class="section compact-section">
-        <div class="container narrow cards-stack">
-          <article class="card experience-block">
-            <p class="meta">2024 to Present • Cebu (Remote)</p>
-            <h2>Full-Stack Developer Freelancer, Anek2</h2>
-            <p>
-              Working on a DOH Lab Form Automation system used by medical technologists in Cebu.
-            </p>
-            <ul>
-              <li>Handled parts of the system design, backend workflow automation, and data processing.</li>
-              <li>Built flows that help labs process requests from different departments in parallel.</li>
-              <li>Focused on reducing manual errors and improving turnaround time.</li>
-            </ul>
-          </article>
-
-          <article class="card experience-block">
-            <p class="meta">February 2026 to May 2026 • Cebu (Remote)</p>
-            <h2>Full-Stack Developer Intern, Symph</h2>
-            <p>
-              Contributed to product work for Finspend and CourtHub during my internship at Symph.
-            </p>
-            <ul>
-              <li>Implemented features, fixed bugs, and connected frontend work with APIs.</li>
-              <li>Worked with the team to improve reliability and smooth out user-facing flows.</li>
-              <li>Got experience contributing to production code in a fast-moving setup.</li>
-            </ul>
-          </article>
-
-          <article class="card experience-block">
-            <p class="meta">February 2026 to May 2026 • Melbourne (Remote)</p>
-            <h2>Mobile App Developer Intern, Focus Bear</h2>
-            <p>
-              Developed and maintained features for the Focus Bear mobile app using React Native.
-            </p>
-            <ul>
-              <li>Built UI features in coordination with design and backend teammates.</li>
-              <li>Integrated APIs needed for app functionality and day-to-day use.</li>
-              <li>Worked in a cross-functional remote environment with regular product feedback.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section compact-section">
         <div class="container narrow">
+          <div class="hero-copy feature-card">
+            <div class="title-group">
+              <h1>Work Experience</h1>
+              <p class="lead">
+                A closer look at the freelance and internship work behind the
+                summary on my main portfolio page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section">
+        <div class="container narrow section-shell mission-shell">
+          <p class="section-marker">Operational Timeline</p>
+          <div class="timeline">
+            <article class="timeline-card experience-block">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <p class="timeline-tag">2024 to Present</p>
+                  <p class="meta">Cebu (Remote)</p>
+                </div>
+                <h2>Anek2</h2>
+                <p class="role-line">Full-Stack Developer Freelancer</p>
+              </div>
+              <p>
+                Supporting client work as a freelance full-stack developer with a
+                focus on workflow automation, backend logic, and practical
+                day-to-day usability.
+              </p>
+              <ul>
+                <li>
+                  Contribute to system design, backend workflow automation, and
+                  data processing for operational workflows.
+                </li>
+                <li>
+                  Build flows that help teams process requests across departments
+                  with less manual coordination.
+                </li>
+                <li>
+                  Focus on reducing manual errors and improving turnaround time
+                  through more structured and dependable systems.
+                </li>
+              </ul>
+              <div class="sub-work">
+                <p class="sub-work-label">Contract Work</p>
+                <div class="sub-work-item">
+                  <h3>DOH Lab Form Automation System</h3>
+                  <p>
+                    A laboratory workflow system used by medical technologists in
+                    Cebu to support form processing and coordination across
+                    departments.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-card experience-block">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <p class="timeline-tag">February 2026 to May 2026</p>
+                  <p class="meta">Cebu (Remote)</p>
+                </div>
+                <h2>Symph</h2>
+                <p class="role-line">Full-Stack Developer Intern</p>
+              </div>
+              <p>
+                Contributed to product-facing development work during my
+                internship, building features, fixing bugs, and supporting active
+                product delivery.
+              </p>
+              <ul>
+                <li>
+                  Implemented features, fixed bugs, and connected frontend work
+                  with APIs across live product builds.
+                </li>
+                <li>
+                  Helped improve reliability and smooth out user-facing flows in
+                  collaboration with the broader product team.
+                </li>
+                <li>
+                  Gained experience contributing to production code in a
+                  fast-moving environment with real delivery expectations.
+                </li>
+              </ul>
+              <div class="sub-work">
+                <p class="sub-work-label">Product Work</p>
+                <div class="sub-work-grid">
+                  <div class="sub-work-item">
+                    <h3>CourtHub</h3>
+                    <p>
+                      An all-in-one sports booking platform for both customers
+                      and sports facilities.
+                    </p>
+                  </div>
+                  <div class="sub-work-item">
+                    <h3>FinSpend</h3>
+                    <p>
+                      A financial budget companion with AI integrations to
+                      support planning and money management workflows.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-card experience-block">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <p class="timeline-tag">February 2026 to May 2026</p>
+                  <p class="meta">Melbourne (Remote)</p>
+                </div>
+                <h2>Focus Bear</h2>
+                <p class="role-line">Mobile App Developer Intern</p>
+              </div>
+              <p>
+                Developed and maintained features for the Focus Bear mobile app
+                using React Native.
+              </p>
+              <ul>
+                <li>
+                  Built mobile UI features in coordination with design and
+                  backend teammates to support ongoing product work.
+                </li>
+                <li>
+                  Integrated APIs needed for app functionality and the day-to-day
+                  experience inside the product.
+                </li>
+                <li>
+                  Worked in a cross-functional remote environment shaped by
+                  regular product feedback and iteration.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section support-tier">
+        <div class="container narrow section-shell">
           <div class="section-heading">
-            <p class="panel-label">Related Experience</p>
-            <h2>Leadership and Project Work</h2>
+            <p class="section-marker">Supporting Work</p>
+            <h2>Leadership and Projects</h2>
           </div>
           <div class="two-column">
-            <article class="card panel-block">
-              <h3>Leadership and Involvement</h3>
+            <article class="support-card">
+              <h3>Leadership</h3>
               <ul class="detail-list">
-                <li>Served as President and Hardware Lead of USC Computer Driver Enthusiasts.</li>
-                <li>Also worked with the USC Computer Engineering Council as a councilor and committee member.</li>
+                <li>
+                  Served as President and Hardware Lead of USC Computer Driver
+                  Enthusiasts, helping lead technical activities and member
+                  engagement.
+                </li>
+                <li>
+                  Also supported the USC Computer Engineering Council as a
+                  councilor and committee member for student programs and
+                  department initiatives.
+                </li>
               </ul>
             </article>
 
-            <article class="card panel-block">
-              <h3>Project Alignment</h3>
+            <article class="support-card">
+              <h3>Project Work</h3>
               <ul class="detail-list">
-                <li>Projects like the Automated Imaging System, SproutSpot, and Klaro reflect my interest in practical engineering work.</li>
-                <li>These projects strengthened my skills in automation, frontend work, backend integration, and hardware-aware problem solving.</li>
+                <li>
+                  Projects like the Automated Imaging System, SproutSpot, and
+                  Klaro reflect my interest in practical engineering work with
+                  clear real-world use.
+                </li>
+                <li>
+                  These builds strengthened my experience in automation,
+                  frontend development, backend integration, and
+                  hardware-aware problem solving.
+                </li>
               </ul>
             </article>
           </div>
@@ -103,9 +211,15 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>More detail beyond the one-page resume.</p>
-        <a href="index.html">Back to Resume</a>
+        <p class="footer-kicker">Lysander Uy</p>
+        <p class="footer-line">
+          Full-stack development, automation, and embedded systems.
+        </p>
       </div>
     </footer>
+    <button class="back-to-top" type="button" aria-label="Back to top">
+      Top
+    </button>
+    <script src="script.js" defer></script>
   </body>
 </html>
